@@ -5,7 +5,7 @@
    "type": "git",
    "subDir": null,
    "scope": "",
-   "rev": "5dabad6d9c57066d28851cfd2d7282679060b609",
+   "rev": "c549ba005be845afc30a35d3677f11197829917b",
    "name": "UnicodeSkipListTable",
    "manifestFile": "lake-manifest.json",
    "inputRev": null,
