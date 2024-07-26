@@ -27,9 +27,11 @@ def main : IO Unit := do
       let summary := summarizeUnicodeData ucd
       printSummary summary
       let property := fun ucdc : UnicodeDataGC => if let .Number _ := ucdc.gc then true else false
-      let table := calculateTable (ucd.map UniCoe.coe) property
-      writeUnicodeVersion
-      writeTable "numeric" table
+      let table := calculateTable ucd property
+      let fd₁ := join workingDir <| System.mkFilePath ["UnicodeSkipListTableExample", "UnicodeVersion.lean"]
+      writeUnicodeVersion fd₁
+      let fd₂ := join workingDir <| System.mkFilePath ["UnicodeSkipListTableExample", "Tables.lean"]
+      writeTable fd₂ "numeric" table
   | Except.error msg =>
     println msg
     IO.Process.exit 1

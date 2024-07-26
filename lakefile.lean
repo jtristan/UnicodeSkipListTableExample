@@ -8,7 +8,6 @@ require UnicodeSkipListTable from git
 
 lean_lib «UnicodeSkipListTableExample» where
 
-
 @[default_target]
 lean_exe "generate_tables" where
   root := `Generation
