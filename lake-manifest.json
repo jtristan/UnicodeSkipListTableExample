@@ -1,0 +1,15 @@
+{"version": "1.1.0",
+ "packagesDir": ".lake/packages",
+ "packages":
+ [{"url": "https://github.com/jtristan/UnicodeSkipListTable.git",
+   "type": "git",
+   "subDir": null,
+   "scope": "",
+   "rev": "b0c64a9845a69b800f9263a3e46c9327805e402a",
+   "name": "UnicodeSkipListTable",
+   "manifestFile": "lake-manifest.json",
+   "inputRev": null,
+   "inherited": false,
+   "configFile": "lakefile.lean"}],
+ "name": "UnicodeSkipListTableExample",
+ "lakeDir": ".lake"}

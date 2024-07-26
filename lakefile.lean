@@ -2,11 +2,13 @@ import Lake
 open Lake DSL
 
 package "UnicodeSkipListTableExample" where
-  -- add package configuration options here
+
+require UnicodeSkipListTable from git
+  "https://github.com/jtristan/UnicodeSkipListTable.git"
 
 lean_lib «UnicodeSkipListTableExample» where
-  -- add library configuration options here
+
 
 @[default_target]
-lean_exe "unicodeskiplisttableexample" where
-  root := `Main
+lean_exe "generate_tables" where
+  root := `Generation
